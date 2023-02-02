@@ -1,0 +1,57 @@
+@keyframes bgFrame {
+	0% {
+		background-color: darkorange
+	}
+	50% {
+		background-color: skyblue
+	}
+	75% {
+		background-color: crimson
+	}
+	100% {
+		background-color: #1c1341
+	}
+}
+
+@keyframes sunFrame {
+	0% {
+		right: 30px;
+		bottom: -100px;
+		background-color: red;
+	}
+	
+	50% {
+		right: 700px;
+		bottom: 350px;
+		background-color: yellow;
+	}
+	
+	100% {
+		right: 1400px;
+		bottom: -100px;
+		background-color: orangered;
+	}
+}
+
+
+#main {
+	height: 500px;
+	background-color: aqua;
+	animation-name: bgFrame;
+	animation-duration: 10s;
+	animation-iteration-count: infinite;
+	position: relative;
+	overflow: hidden;
+}
+
+#sun {
+	border-radius: 50%;
+	height: 100px;
+	width: 100px;
+	background-color: black;
+	position: absolute;
+	animation-name: sunFrame;
+	animation-duration: 10s;
+	animation-iteration-count: infinite;
+}
+
